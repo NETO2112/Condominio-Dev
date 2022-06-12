@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZuK5mtyU3Zb6oBh+aazf1GOx2qg/QG8gLglGSquQdOojFgnoXR1loeI4udx0vWI5BycYGmhiUspNAsPDKOFI6g==",
+  "success": true,
+  "projectFilePath": "E:\\VSCODE_CODES\\Projects\\RecMod2\\Condominio-Dev\\src\\CondominioDev.Api\\CondominioDev.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\NETO\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\NETO\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\NETO\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\NETO\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\NETO\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\NETO\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
