@@ -1,0 +1,12 @@
+E:\VSCODE_CODES\Projects\RecMod2\Condominio-Dev\src\CondominioDev.Core\bin\Debug\net6.0\CondominioDev.Core.deps.json
+E:\VSCODE_CODES\Projects\RecMod2\Condominio-Dev\src\CondominioDev.Core\bin\Debug\net6.0\CondominioDev.Core.dll
+E:\VSCODE_CODES\Projects\RecMod2\Condominio-Dev\src\CondominioDev.Core\bin\Debug\net6.0\CondominioDev.Core.pdb
+E:\VSCODE_CODES\Projects\RecMod2\Condominio-Dev\src\CondominioDev.Core\obj\Debug\net6.0\CondominioDev.Core.csproj.AssemblyReference.cache
+E:\VSCODE_CODES\Projects\RecMod2\Condominio-Dev\src\CondominioDev.Core\obj\Debug\net6.0\CondominioDev.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\VSCODE_CODES\Projects\RecMod2\Condominio-Dev\src\CondominioDev.Core\obj\Debug\net6.0\CondominioDev.Core.AssemblyInfoInputs.cache
+E:\VSCODE_CODES\Projects\RecMod2\Condominio-Dev\src\CondominioDev.Core\obj\Debug\net6.0\CondominioDev.Core.AssemblyInfo.cs
+E:\VSCODE_CODES\Projects\RecMod2\Condominio-Dev\src\CondominioDev.Core\obj\Debug\net6.0\CondominioDev.Core.csproj.CoreCompileInputs.cache
+E:\VSCODE_CODES\Projects\RecMod2\Condominio-Dev\src\CondominioDev.Core\obj\Debug\net6.0\CondominioDev.Core.dll
+E:\VSCODE_CODES\Projects\RecMod2\Condominio-Dev\src\CondominioDev.Core\obj\Debug\net6.0\refint\CondominioDev.Core.dll
+E:\VSCODE_CODES\Projects\RecMod2\Condominio-Dev\src\CondominioDev.Core\obj\Debug\net6.0\CondominioDev.Core.pdb
+E:\VSCODE_CODES\Projects\RecMod2\Condominio-Dev\src\CondominioDev.Core\obj\Debug\net6.0\ref\CondominioDev.Core.dll
