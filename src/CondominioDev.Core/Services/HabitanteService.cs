@@ -36,8 +36,9 @@ namespace CondominioDev.Core.Services
             return habitante.Id;
         }
 
-        public void AtualizarHabitante()
+        public void AtualizarHabitante(Habitante habitanteOriginal, Habitante habitanteAtualizado)
         {
+            habitanteOriginal.AtualizarDados(habitanteAtualizado);
             _context.SaveChanges();
         }
 

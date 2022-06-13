@@ -12,7 +12,7 @@ namespace CondominioDev.Core.Interfaces
         
         public int CadastrarHabitante(Habitante habitante);
 
-        public void AtualizarHabitante();
+        public void AtualizarHabitante(Habitante habitanteOriginal, Habitante habitanteAtualizado);
 
         public void DeletarHabitante(int id);
 
