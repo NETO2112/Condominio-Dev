@@ -1,4 +1,6 @@
 using CondominioDev.Core.Data.Context;
+using CondominioDev.Core.Interfaces;
+using CondominioDev.Core.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,7 +14,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DataContext>(options => 
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))
 );
-
+builder.Services.AddScoped<IHabitanteService, HabitanteService>();
 
 var app = builder.Build();
 

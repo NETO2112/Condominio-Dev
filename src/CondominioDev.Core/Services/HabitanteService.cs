@@ -36,7 +36,7 @@ namespace CondominioDev.Core.Services
             return habitante.Id;
         }
 
-        public void AtualizarHabitante(Habitante habitante)
+        public void AtualizarHabitante()
         {
             _context.SaveChanges();
         }
@@ -59,6 +59,11 @@ namespace CondominioDev.Core.Services
             _context.Habitantes.RemoveRange(habitantes);
         }
 
-
+        public List<Habitante>? ObterHabitantePorMesDeNascimento(int mes)
+        {
+            return _context.Habitantes
+                .Where(p => p.DataNascimento.Month == mes)
+                .ToList();
+        }
     }
 }

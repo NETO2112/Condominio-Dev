@@ -12,10 +12,12 @@ namespace CondominioDev.Core.Interfaces
         
         public int CadastrarHabitante(Habitante habitante);
 
-        public void AtualizarHabitante(Habitante habitante);
+        public void AtualizarHabitante();
 
         public void DeletarHabitante(int id);
 
         public void DeletarTodosHabitantes();
+
+        public List<Habitante>? ObterHabitantePorMesDeNascimento(int mes);
     }
 }
