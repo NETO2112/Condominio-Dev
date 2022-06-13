@@ -19,5 +19,11 @@ namespace CondominioDev.Core.Interfaces
         public void DeletarTodosHabitantes();
 
         public List<Habitante>? ObterHabitantePorMesDeNascimento(int mes);
+
+        public List<Habitante>? ObterHabitanteComIdadeMaiorQue(int idade);
+        
+        public decimal ObterRendaTotal();
+
+        public Habitante ObterHabitanteComMaiorRenda();
     }
 }

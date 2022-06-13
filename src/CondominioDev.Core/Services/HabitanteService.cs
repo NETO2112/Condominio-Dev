@@ -31,6 +31,10 @@ namespace CondominioDev.Core.Services
 
         public int CadastrarHabitante(Habitante habitante)
         {
+            var ValidacaoCPF = _context.Habitantes
+                .Any(p => p.CPF == habitante.CPF);
+            if (ValidacaoCPF)
+                return -1;
             _context.Habitantes.Add(habitante);
             _context.SaveChanges();
             return habitante.Id;
@@ -46,8 +50,6 @@ namespace CondominioDev.Core.Services
         public void DeletarHabitante(int id)
         {
             var habitante = ObterHabitantePorId(id);
-            if (habitante == null)
-                throw new Exception("Habitante não encontrado");
             _context.Habitantes.Remove(habitante);
             _context.SaveChanges();
         }
@@ -55,8 +57,6 @@ namespace CondominioDev.Core.Services
         public void DeletarTodosHabitantes()
         {
             var habitantes = ObterTodosHabitantes();
-            if (habitantes == null)
-                throw new Exception("Não há habitantes cadastrados");
             _context.Habitantes.RemoveRange(habitantes);
             _context.SaveChanges();
         }
@@ -66,6 +66,26 @@ namespace CondominioDev.Core.Services
             return _context.Habitantes
                 .Where(p => p.DataNascimento.Month == mes)
                 .ToList();
+        }
+
+        public List<Habitante>? ObterHabitanteComIdadeMaiorQue(int idade)
+        {
+            return _context.Habitantes
+                .Where(p => -p.DataNascimento.Year + DateTime.Now.Year > idade)
+                .ToList();
+        }
+
+        public decimal ObterRendaTotal()
+        {
+            return _context.Habitantes
+                .Sum(p => p.Renda);
+        }
+
+        public Habitante ObterHabitanteComMaiorRenda()
+        {
+            return _context.Habitantes
+                .OrderByDescending(p => p.Renda)
+                .FirstOrDefault();
         }
     }
 }

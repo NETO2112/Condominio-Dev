@@ -20,8 +20,6 @@ namespace CondominioDev.Core.Entities
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
         public string Sobrenome { get; private set; }
 
-        //[JsonIgnore]
-
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
         public string CPF { get; private set; }
 
