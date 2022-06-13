@@ -1,3 +1,4 @@
+using System.Reflection;
 using CondominioDev.Core.Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -9,6 +10,7 @@ namespace CondominioDev.Core.Data.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         }
 
         public DbSet<Habitante> Habitantes { get; set; }
