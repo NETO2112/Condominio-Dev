@@ -24,7 +24,7 @@ namespace CondominioDev.Api.Controllers
             return Ok(habitantes);
         }
 
-        [HttpGet("{nome}")]
+        [HttpGet("/GetNome/{nome}")]
         public ActionResult<List<Habitante>> ObterHabitantePorNome(string nome)
         {
             var habitantes = _habitanteService.ObterHabitantePorNome(nome);
@@ -34,7 +34,7 @@ namespace CondominioDev.Api.Controllers
             return Ok(habitantes);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("/GetId/{id}")]
         public ActionResult<Habitante> ObterHabitantePorId(int id)
         {
             var habitante = _habitanteService.ObterHabitantePorId(id);
@@ -78,7 +78,7 @@ namespace CondominioDev.Api.Controllers
             return NoContent();
         }
 
-        [HttpGet("{mes}")]
+        [HttpGet("/GetMes/{mes}")]
         public ActionResult<List<Habitante>> ObterHabitantePorMesDeNascimento(int mes)
         {
             var habitantes = _habitanteService.ObterHabitantePorMesDeNascimento(mes);

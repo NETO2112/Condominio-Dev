@@ -58,6 +58,7 @@ namespace CondominioDev.Core.Services
             if (habitantes == null)
                 throw new Exception("Não há habitantes cadastrados");
             _context.Habitantes.RemoveRange(habitantes);
+            _context.SaveChanges();
         }
 
         public List<Habitante>? ObterHabitantePorMesDeNascimento(int mes)
